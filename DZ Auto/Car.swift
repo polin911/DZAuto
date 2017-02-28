@@ -10,38 +10,52 @@ import Foundation
 
 struct Car {
     
-    var price: Double
+   // var price: Int
     
     enum Function {
         case leather
         case automat
         case air
         case luk
+        
     }
     
-    func makePrice(about: Function) -> Double {
-        var allPrice = self.price
-       
-        switch about {
-        case .leather: true
-            allPrice += 20000
-        case .air: true
-            allPrice += 15000
-        case .automat: true
-            allPrice += 25000
-        case .luk: true
-            allPrice += 10000
-        default:
-            allPrice += 0
+    func makePrice(car: Function)-> Int {
+        var price = 0
+        
+        switch car {
+        case .leather:
+            price += 2000
+        case .air:
+            price += 3000
+        case.automat:
+            price += 4000
+        case .luk:
+            price += 5000
         }
+        return price
+        
+    }
+
+    
+//    func makePrice() -> String {
+//        var allPrice = 00
+//       
+//        switch Function.self {
+//        case .leather:
+//            allPrice += 20000
+//        case .air:
+//            allPrice += 15000
+//        case .automat:
+//            allPrice += 25000
+//        case .luk:
+//            allPrice += 10000
+//        
+//        }
     
         
-        return allPrice
-    }
-    
-    
-    
-    
+//        return String(allPrice)
+//    }
     
     
     

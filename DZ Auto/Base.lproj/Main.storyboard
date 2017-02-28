@@ -33,7 +33,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="kew-0f-1E7">
                                         <rect key="frame" x="8" y="173" width="151" height="248"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.75" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Кожанный салон" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ihe-DR-59d">
+                                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.75" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="748" text="Кожанный салон" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ihe-DR-59d">
                                                 <rect key="frame" x="0.0" y="0.0" width="135" height="20.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
@@ -42,6 +42,9 @@
                                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="67q-lg-IUy">
                                                 <rect key="frame" x="0.0" y="26.5" width="51" height="31"/>
                                                 <color key="onTintColor" red="0.64542988469999996" green="0.46266353570000002" blue="0.69649439099999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                <connections>
+                                                    <action selector="leatherOnSwitch:" destination="BYZ-38-t0r" eventType="valueChanged" id="Cyz-x4-kZ6"/>
+                                                </connections>
                                             </switch>
                                             <label opaque="NO" userInteractionEnabled="NO" alpha="0.75" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Автомат" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I9S-GY-IcF">
                                                 <rect key="frame" x="0.0" y="63.5" width="67" height="20.5"/>
@@ -52,8 +55,11 @@
                                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="saJ-Dt-FI4">
                                                 <rect key="frame" x="0.0" y="90" width="51" height="31"/>
                                                 <color key="onTintColor" red="0.64542988469999996" green="0.46266353570000002" blue="0.69649439099999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                <connections>
+                                                    <action selector="autoOnSwitch:" destination="BYZ-38-t0r" eventType="valueChanged" id="kb8-8I-U9Q"/>
+                                                </connections>
                                             </switch>
-                                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.75" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Люк в крыше" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9h1-PW-OM7">
+                                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.75" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Люк в крыше" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9h1-PW-OM7">
                                                 <rect key="frame" x="0.0" y="127" width="105" height="20.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
@@ -62,6 +68,9 @@
                                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZQf-NS-ekD">
                                                 <rect key="frame" x="0.0" y="153.5" width="51" height="31"/>
                                                 <color key="onTintColor" red="0.64542988469999996" green="0.46266353570000002" blue="0.69649439099999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                <connections>
+                                                    <action selector="lukOnSwitch:" destination="BYZ-38-t0r" eventType="valueChanged" id="KxS-dQ-xZQ"/>
+                                                </connections>
                                             </switch>
                                             <label opaque="NO" userInteractionEnabled="NO" alpha="0.75" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Климат конртолль " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Foe-59-Aif">
                                                 <rect key="frame" x="0.0" y="190.5" width="151" height="20.5"/>
@@ -72,6 +81,9 @@
                                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IHu-gw-pNE">
                                                 <rect key="frame" x="0.0" y="217" width="51" height="31"/>
                                                 <color key="onTintColor" red="0.64542988469999996" green="0.46266353570000002" blue="0.69649439099999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                <connections>
+                                                    <action selector="climateOnSwitch:" destination="BYZ-38-t0r" eventType="valueChanged" id="Rjl-w8-JUP"/>
+                                                </connections>
                                             </switch>
                                         </subviews>
                                         <constraints>
@@ -134,6 +146,13 @@
                             <constraint firstItem="aOZ-sQ-1YE" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="yqR-ji-mEx"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="automatSwitchOutlet" destination="saJ-Dt-FI4" id="zeZ-QD-jsl"/>
+                        <outlet property="climateSwitchOutlet" destination="IHu-gw-pNE" id="A8N-7j-v4B"/>
+                        <outlet property="leatherSwitchOutlet" destination="67q-lg-IUy" id="M0W-zD-UKV"/>
+                        <outlet property="lukSwitchOutlet" destination="ZQf-NS-ekD" id="TqQ-Bs-Fuz"/>
+                        <outlet property="priceLabel" destination="0xv-yp-lHh" id="zJH-57-En6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
