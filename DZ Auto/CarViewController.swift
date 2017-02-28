@@ -15,7 +15,7 @@ class CarViewController: UIViewController {
     
     @IBOutlet var priceLabel: UILabel!
     
-    var price = 10000
+    var price = 100000
     
     
     
@@ -52,7 +52,7 @@ class CarViewController: UIViewController {
         if leatherSwitchOutlet.isOn {
             price += allAboutCar.makePrice(car: .leather)
         } else  { price -= allAboutCar.makePrice(car: .leather)}
-        priceLabel.text = String(price)
+        priceLabel.text = String("\(price)$ ")
     }
     
     @IBAction func autoOnSwitch(_ sender: UISwitch) {
@@ -61,7 +61,7 @@ class CarViewController: UIViewController {
         if automatSwitchOutlet.isOn {
             price += allAboutCar.makePrice(car: .automat)
         } else {price -= allAboutCar.makePrice(car: .automat)}
-        priceLabel.text = String(price)
+        priceLabel.text = String("\(price)$ ")
     }
     
     
@@ -71,7 +71,7 @@ class CarViewController: UIViewController {
         if lukSwitchOutlet.isOn {
             price += allAboutCar.makePrice(car: .luk)
         } else {price -= allAboutCar.makePrice(car: .luk)}
-        priceLabel.text = String(price)
+        priceLabel.text = String("\(price)$ ")
     }
     
     
@@ -81,7 +81,7 @@ class CarViewController: UIViewController {
         if climateSwitchOutlet.isOn {
             price += allAboutCar.makePrice(car: .air)
         } else {price -= allAboutCar.makePrice(car: .air)}
-        priceLabel.text = String(price)
+        priceLabel.text = String("\(price)$ ")
     }
     
     

@@ -25,13 +25,13 @@ struct Car {
         
         switch car {
         case .leather:
-            price += 2000
+            price += 25000
         case .air:
-            price += 3000
+            price += 30500
         case.automat:
-            price += 4000
+            price += 40700
         case .luk:
-            price += 5000
+            price += 50000
         }
         return price
         
