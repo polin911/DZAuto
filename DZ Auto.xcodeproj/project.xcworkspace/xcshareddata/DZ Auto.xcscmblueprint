@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "FA85A66AC74F76D00F2EF638D19CBB6CD2AF0C75",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "FA85A66AC74F76D00F2EF638D19CBB6CD2AF0C75" : 9223372036854775807,
+    "92888FA5E6E5B133663A8B2FFCDEB5209E3CD060" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "B26DDD6D-3EC7-45BA-9489-DC432426DB2E",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "FA85A66AC74F76D00F2EF638D19CBB6CD2AF0C75" : "DZ%20Auto\/",
+    "92888FA5E6E5B133663A8B2FFCDEB5209E3CD060" : "DZ%20Auto\/DZ%20Auto\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "DZ Auto",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "DZ Auto.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/polin911\/DZ-Auto.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "92888FA5E6E5B133663A8B2FFCDEB5209E3CD060"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/polin911\/DZAuto.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "FA85A66AC74F76D00F2EF638D19CBB6CD2AF0C75"
+    }
+  ]
+}
