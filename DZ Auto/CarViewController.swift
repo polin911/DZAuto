@@ -12,11 +12,13 @@ class CarViewController: UIViewController {
     
     var allAboutCar: Car = Car()
     
+    @IBOutlet var viewBackground: UIView!
     
     @IBOutlet var priceLabel: UILabel!
     
     var price = 100000
     
+    @IBOutlet var choseColorOutlet: UISegmentedControl!
     
     
     @IBOutlet var leatherSwitchOutlet: UISwitch!
@@ -38,30 +40,30 @@ class CarViewController: UIViewController {
         lukSwitchOutlet.setOn(false, animated: true)
         climateSwitchOutlet.setOn(false, animated: true)
         
+        choseColorOutlet.addTarget(self, action: #selector(choseColor), for: .valueChanged)
         
-        
+        discound()
         
     }
     
-    
-    
-    
-    ////////////////need help!!!
     @IBAction func leatherOnSwitch(_ sender: UISwitch) {
-        //var newPrice = price
+        
         if leatherSwitchOutlet.isOn {
             price += allAboutCar.makePrice(car: .leather)
         } else  { price -= allAboutCar.makePrice(car: .leather)}
         priceLabel.text = String("\(price)$ ")
+        
+        discound()
     }
     
     @IBAction func autoOnSwitch(_ sender: UISwitch) {
-        //var newPrice = price
         
         if automatSwitchOutlet.isOn {
             price += allAboutCar.makePrice(car: .automat)
         } else {price -= allAboutCar.makePrice(car: .automat)}
         priceLabel.text = String("\(price)$ ")
+        
+        discound()
     }
     
     
@@ -72,6 +74,8 @@ class CarViewController: UIViewController {
             price += allAboutCar.makePrice(car: .luk)
         } else {price -= allAboutCar.makePrice(car: .luk)}
         priceLabel.text = String("\(price)$ ")
+        
+        discound()
     }
     
     
@@ -82,7 +86,49 @@ class CarViewController: UIViewController {
             price += allAboutCar.makePrice(car: .air)
         } else {price -= allAboutCar.makePrice(car: .air)}
         priceLabel.text = String("\(price)$ ")
+        
+        discound()
+    }
+    
+    @IBAction func choseColorButtonPressed(_ sender: UISegmentedControl) {
+        
+    }
+    ////////////
+    
+    func choseColor() {
+        switch choseColorOutlet.selectedSegmentIndex {
+        case 0:
+            viewBackground.backgroundColor = UIColor.yellow
+            price += allAboutCar.makePrice(car: .colorYellow)
+            priceLabel.text = String("\(price)$ ")
+        case 1:
+            viewBackground.backgroundColor = UIColor.red
+            price += allAboutCar.makePrice(car: .colorRed)
+            priceLabel.text = String("\(price)$ ")
+        case 2:
+            viewBackground.backgroundColor = UIColor.blue
+            price += allAboutCar.makePrice(car: .colorBlue)
+            priceLabel.text = String("\(price)$ ")
+        default: break
+            
+        }
     }
     
     
+    func discound() {
+        if climateSwitchOutlet.isOn && lukSwitchOutlet.isOn && automatSwitchOutlet.isOn && leatherSwitchOutlet.isOn {
+            
+          priceLabel.textColor = UIColor.red
+            priceLabel.text = "221 580$"
+        } else {
+            priceLabel.textColor = UIColor(red: 106.0/255.0, green: 27.0/255.0, blue: 154.0/255.0, alpha: 1.0)
+        }
+    }
+    
 }
+
+
+
+
+
+

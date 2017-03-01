@@ -10,13 +10,15 @@ import Foundation
 
 struct Car {
     
-   // var price: Int
-    
     enum Function {
         case leather
         case automat
         case air
         case luk
+        
+        case colorYellow
+        case colorRed
+        case colorBlue
         
     }
     
@@ -32,6 +34,13 @@ struct Car {
             price += 40700
         case .luk:
             price += 50000
+            
+        case .colorYellow:
+            price += 2555
+        case .colorRed:
+            price += 3555
+        case.colorBlue:
+            price += 4555
         }
         return price
         
