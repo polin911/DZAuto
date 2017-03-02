@@ -40,7 +40,7 @@ class CarViewController: UIViewController {
         lukSwitchOutlet.setOn(false, animated: true)
         climateSwitchOutlet.setOn(false, animated: true)
         
-        choseColorOutlet.addTarget(self, action: #selector(choseColor), for: .valueChanged)
+        //choseColorOutlet.addTarget(self, action: #selector(choseColor), for: .valueChanged)
         
         discound()
         
@@ -91,6 +91,22 @@ class CarViewController: UIViewController {
     }
     
     @IBAction func choseColorButtonPressed(_ sender: UISegmentedControl) {
+        if choseColorOutlet.selectedSegmentIndex == 0 {
+            viewBackground.backgroundColor = UIColor(red: 205.0/255.0, green: 185.0/255.0, blue: 255.0/255.0, alpha: 1.0)
+            price += allAboutCar.makePrice(car: .colorYellow)
+            priceLabel.text = String("\(price)$ ")
+        }
+        if choseColorOutlet.selectedSegmentIndex == 1 {
+            viewBackground.backgroundColor = UIColor.red
+            price += allAboutCar.makePrice(car: .colorRed)
+            priceLabel.text = String("\(price)$ ")
+
+        }
+        if choseColorOutlet.selectedSegmentIndex == 2 {
+            viewBackground.backgroundColor = UIColor.blue
+            price += allAboutCar.makePrice(car: .colorBlue)
+            priceLabel.text = String("\(price)$ ")
+        }
         
     }
     ////////////
@@ -98,7 +114,7 @@ class CarViewController: UIViewController {
     func choseColor() {
         switch choseColorOutlet.selectedSegmentIndex {
         case 0:
-            viewBackground.backgroundColor = UIColor.yellow
+            viewBackground.backgroundColor = UIColor(red: 205.0/255.0, green: 185.0/255.0, blue: 255.0/255.0, alpha: 1.0)
             price += allAboutCar.makePrice(car: .colorYellow)
             priceLabel.text = String("\(price)$ ")
         case 1:
